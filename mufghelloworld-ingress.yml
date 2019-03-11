@@ -1,0 +1,25 @@
+
+
+apiVersion:  extensions/v1beta1
+kind: Ingress
+metadata:
+  name: mufghelloworld
+  namespace: mufg
+  labels:
+    app: mufghelloworld
+  annotations:
+    # zalando.org/skipper-predicate: Source("34.218.139.139/32", "35.163.194.239/32")
+spec:
+  rules:
+    - host: mufghelloworld.apps.xlabsdfs.com
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: mufghelloworld
+              servicePort: http
+          - path: /*
+            backend:
+              serviceName: mufghelloworld
+              servicePort: http
+
