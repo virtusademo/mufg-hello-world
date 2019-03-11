@@ -21,4 +21,4 @@ COPY ./ .
 # Define working directory.
 RUN mvn install
 
-ENTRYPOINT ["java", "-jar", "/root/.m2/repository/com/mufg/mufg-hello-world/0.0.1-SNAPSHOT/springbootdemo-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "/root/.m2/repository/com/mufg/mufg-hello-world/0.0.1-SNAPSHOT/mufg-hello-world-0.0.1-SNAPSHOT.jar"]
