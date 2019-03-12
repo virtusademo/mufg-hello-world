@@ -45,11 +45,9 @@ spec:
     spec:
       containers:
       - name: mufghelloworld
-        image: mufgpoc/mufghelloworld
+        image: registry.hub.docker.com/virtusademo/mufg-hello-world
         imagePullPolicy: Always
         ports:
           - containerPort: 8080
             name: http
             protocol: TCP
-      imagePullSecrets:
-      - name: dockerregistrysecret
