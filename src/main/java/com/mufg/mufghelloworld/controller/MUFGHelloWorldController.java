@@ -10,7 +10,6 @@ public class MUFGHelloWorldController {
 	
 	@GetMapping("/helloworld")
 	public String helloWorld(){
-		return "Welcome to MUFG Demo. Testing internal docker registry";
+		return "Welcome to MUFG Demo. Date - 22/March/2019";
 	}
-
 }
