@@ -10,6 +10,6 @@ public class MUFGHelloWorldController {
 	
 	@GetMapping("/helloworld")
 	public String helloWorld(){
-		return "Welcome to MUFG Demo. Date - 22/March/2019";
+		return "Welcome to MUFG Demo. Date - 22/March/2019. Testing successful";
 	}
 }
