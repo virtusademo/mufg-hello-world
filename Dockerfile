@@ -16,7 +16,6 @@ ENV MAVEN_HOME=/usr/share/maven
 
 WORKDIR /var/lib/jenkins/workspace/test
 COPY ./ .
-#
 # Define working directory.
 RUN mvn clean install
 
