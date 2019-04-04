@@ -18,5 +18,4 @@ WORKDIR /var/lib/jenkins/workspace/test
 COPY ./ .
 # Define working directory.
 RUN mvn clean install
-#
 ENTRYPOINT ["java", "-jar", "/root/.m2/repository/com/mufg/mufg-hello-world/0.0.1-SNAPSHOT/mufg-hello-world-0.0.1-SNAPSHOT.jar"]
